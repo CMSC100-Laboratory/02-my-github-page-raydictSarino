@@ -1,6 +1,6 @@
 **Full Name: Raymond Benedict P. Sariño  
 Degree Program: BS Computer Science  
-Live Website link: https://github.com/CMSC100-Laboratory/02-my-github-page-raydictSarino.git  
+Live Website link: https://cmsc100-laboratory.github.io/02-my-github-page-raydictSarino/  
 Steps on how to create GitHub page:  
 What are your ley takeaways from this exercise?**  
 
