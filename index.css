@@ -1,28 +1,112 @@
-.flex-container {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: red;
-    flex-direction: row;
+/* Main Font Body Style */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #081628;
+  color: #ffffff;
 }
 
-.nav_bar {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(255, 0, 200);
-    flex-direction: row;
+/* Default styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
-.flex-container2 {
-    display: flex;
-    border-style: solid;
-    border-width: 5px;
-    border-color: rgb(0, 255, 51);
-    flex-direction: row;
+a {
+  color: #63d2e2;
+  text-decoration: none;
 }
-.flex-item {
-    border-style: solid;
-    border-width: 2px;
-    border-color: red;
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Banner */
+.banner {
+  background-color: #2d7d9a;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 0.9em;
+  position: sticky;
+}
+.banner p {
+  margin: 0;
+}
+
+/* Main Header (Logo and Navigation Bar) */
+.main-header {
+  background-color: #081628;
+  padding: 10px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 65px;
+  transition: 0.3s ease;
+}
+
+.logo img:hover {
+  height: 75px;
+  cursor: default;
+}
+
+.logo-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.logo-name {
+  transition: 0.3s ease;
+}
+
+.logo-name:hover {
+  color: #63d2e2;
+  cursor: default;
+}
+
+/* Footer */
+footer {
+  background-color: #050e1a;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9em;
+}
+footer a {
+  color: #63d2e2;
+}
+footer a:hover {
+  text-decoration: underline;
 }
