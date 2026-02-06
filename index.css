@@ -7,6 +7,10 @@ body {
   color: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Default styles for headings */
 h1,
 h2,
@@ -23,15 +27,34 @@ h6 {
 a {
   color: #63d2e2;
   text-decoration: none;
+  transition: ease 0.3s;
 }
 a:hover {
   text-decoration: underline;
 }
 
 .container {
-  max-width: 95%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.landing-page img {
+  height: 50vw;
+}
+
+/* Body Content */
+.body {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Banner */
@@ -42,6 +65,8 @@ a:hover {
   padding: 8px 0;
   font-size: 0.9em;
   position: sticky;
+  bottom: 0;
+  z-index: 99;
 }
 .banner p {
   margin: 0;
@@ -52,13 +77,16 @@ a:hover {
   background-color: #081628;
   padding: 10px 0;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  max-width: 95%;
+  margin: 0 auto;
 }
 
 .logo {
@@ -94,6 +122,56 @@ a:hover {
 .logo-name:hover {
   color: #63d2e2;
   cursor: default;
+}
+
+/* Main Section */
+.main-section {
+  text-align: center;
+  padding: 80px 0 120px 0;
+  background-color: #081628;
+}
+
+.main-title {
+  font-size: 3.2em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.main-subtitle {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.05em;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #2d7d9a;
+  color: #ffffff;
+  border: 2px solid #2d7d9a;
+}
+
+.btn-primary:hover {
+  background-color: #63d2e2;
+  border-color: #63d2e2;
+  transform: translateY(-2px); /* Adds a little lift effect */
 }
 
 /* Footer */
