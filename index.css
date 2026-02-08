@@ -9,7 +9,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 85px;
 }
 
 /* Default styles for headings */
@@ -50,6 +50,11 @@ a:hover {
 
 .landing-page img {
   height: 50vw;
+  transition: 0.5s ease;
+}
+
+.landing-page a:hover img {
+  transform: scale(1.08);
 }
 
 /* Body Content */
@@ -97,11 +102,15 @@ a:hover {
 .logo img {
   height: 65px;
   transition: 0.3s ease;
+  border-radius: 50%;
+  background-color: #2d7d9a1a;
+  box-shadow: 0 0 15px #63d2e224;
 }
 
 .logo img:hover {
-  height: 75px;
   cursor: default;
+  box-shadow: 0 0 20px #63d2e240;
+  transform: scale(1.08); /* enlarges logo in place */
 }
 
 .logo-text {
@@ -121,6 +130,7 @@ a:hover {
 }
 
 .logo-name:hover {
+  font-size: 1.1em;
   color: #63d2e2;
   cursor: default;
 }
@@ -223,6 +233,22 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.footer-contacts {
+  padding: 10px 100px;
+  background-color: #2d7d9a1a;
+  width: fit-content;
+  margin: 8px auto;
+  border-radius: 15px;
+  border: 1px solid #63d2e21f;
+}
+
+.footer-contacts p {
+  margin: 8px 0;
+  color: #ffffffb2;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
 /* Container for Skills and Projects */
 .skills-section,
 .projects-section {
@@ -253,7 +279,6 @@ footer a:hover {
   margin-top: 20px;
   border: 1px solid #63d2e21f;
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 
 .skill-item:hover,
@@ -272,9 +297,17 @@ footer a:hover {
   margin-top: 0;
 }
 
-.skill-item p,
+.skill-item p {
+  color: #63d2e2;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 12px 0;
+  letter-spacing: 0.5px;
+}
+
 .project-item p {
   color: #ffffffbf;
   margin: 8px 0;
   line-height: 1.6;
+  letter-spacing: 0.5px;
 }
